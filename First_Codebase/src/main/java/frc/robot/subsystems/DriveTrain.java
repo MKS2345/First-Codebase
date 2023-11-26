@@ -15,6 +15,17 @@ public class DriveTrain implements Subsystem {
     public void setLeftMotors(double speed) {
         motorLeft1.set(ControlMode.PercentOutput, speed);
         motorLeft2.set(ControlMode.PercentOutput, speed);
+        SubmissionPublisher<String> publisher = new SubmissionPublisher<>();
+
+        MySubscriber subs = new MySubscriber();
+        publisher.subscribe(subs);
+
+
+        List<String> strs = getStrs();
+
+        System.out.println("Publishing Items to Subscriber");
+        strs.stream().forEach(i -> publisher.submit(i));
+
     }
     public vid setRightMotors(double speed) {
         motorRight1.set(ControlMode.PercentOutput, speed);
