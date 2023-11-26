@@ -1,5 +1,5 @@
 job("Qodana") {
-   container("jetbrains/qodana-<linter>") {
+   container("jetbrains/qodana-jvm") {
       env["QODANA_TOKEN"] = Secrets("qodana-token")
       shellScript {
          content = """qodana"""
