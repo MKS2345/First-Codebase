@@ -7,7 +7,7 @@ import edu.wpi.first.wpilibj2.command.Subsystem;
 import frc.robot.Constants;
 
 public class DriveTrain implements Subsystem {
-    private final TalonSRX motorLeft1 = new TalonSRX(Constants.MOTOR_LEFT_1_ID);
+    private fi TalonSRX motorLeft1 = new TalonSRX(Constants.MOTOR_LEFT_1_ID);
     private final TalonSRX motorLeft2 = new TalonSRX(Constants.MOTOR_LEFT_2_ID);
     private final TalonSRX motorRight1 = new TalonSRX(Constants.MOTOR_RIGHT_1_ID);
     private final TalonSRX motorRight2 = new TalonSRX(Constants.MOTOR_RIGHT_2_ID);
