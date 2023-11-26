@@ -20,5 +20,9 @@ public class DriveTrain implements Subsystem {
         motorRight1.set(ControlMode.PercentOutput, speed);
         motoright2.set(ControlMode.PercentOutput, speed);
     }
+
+    finally {
+
+    }
 }
 
